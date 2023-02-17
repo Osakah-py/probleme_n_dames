@@ -1,0 +1,3 @@
+(test
+ (name michel)
+ (libraries graphics threads camlimages.png camlimages.graphics))

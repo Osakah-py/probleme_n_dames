@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/probleme_n_dames/META"
+  "_build/install/default/lib/probleme_n_dames/dune-package"
+  "_build/install/default/lib/probleme_n_dames/opam"
+]
+bin: [
+  "_build/install/default/bin/probleme_n_dames.exe"
+]

@@ -1,0 +1,14 @@
+(** @canonical Dune__exe.Affichage *)
+module Affichage = Dune__exe__Affichage
+
+
+(** @canonical Dune__exe.Dames *)
+module Dames = Dune__exe__Dames
+
+
+(** @canonical Dune__exe.Main *)
+module Main = Dune__exe__Main
+
+
+(** @canonical Dune__exe.Queen *)
+module Queen = Dune__exe__Queen

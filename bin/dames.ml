@@ -14,7 +14,7 @@ let verif fst reine current n =
         else aux elt q
   in aux fst current;;
 
-  (* Cette fonction est appellée quand on veut revenir en arrière car on est dans une impasse*)
+(* Cette fonction est appellée quand on veut revenir en arrière car on est dans une impasse *)
 let rec depilage curr n = match curr with 
   |[] -> failwith "gros soucis la"
   |(a,b)::q -> if (a+1) < n then (a+1),b,q else depilage q n (*on revient à la dame dont on a pas encore 

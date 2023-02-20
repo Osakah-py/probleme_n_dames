@@ -5,7 +5,7 @@ img = Image.open("queen.png")
 
 # Convertir l'image en mode RVB (Red Green Blue)
 img = img.convert("RGBA")
-# img = img.resize((img.width // 12, img.height // 12))
+img = img.resize((img.width // 2, img.height // 2))
 # Obtenir la taille de l'image
 width, height = img.size
 

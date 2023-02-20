@@ -1,9 +1,9 @@
-# C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\dune.exe exec bin/main.exe 30
+# C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\dune.exe exec bin/main.exe 36
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: "C:\\OCaml64\\home\\Lesco\\probleme_n_dames"
 # Auto-detected concurrency: 4
-$ C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -config > C:\OCaml64\tmp\dune_f34f55_output
+$ C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -config > C:\OCaml64\tmp\dune_9fd96b_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -132,4 +132,3 @@ $ C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -config > C:\OC
 #      ; windows_unicode = true
 #      }
 #  }
-$ (cd _build/default && C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlopt.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\graphics\graphics.cmxa -I C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\graphics C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml\unix.cmxa -I C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml\threads\threads.cmxa -I C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml bin/.main.eobjs/native/dune__exe.cmx bin/.main.eobjs/native/dune__exe__Affichage.cmx bin/.main.eobjs/native/dune__exe__Dames.cmx bin/.main.eobjs/native/dune__exe__Queen.cmx bin/.main.eobjs/native/dune__exe__Main.cmx)

@@ -22,6 +22,7 @@ for y in range(height):
             hex_color = f"0x{r:02x}{g:02x}{b:02x}"
             pixels[y][x] = hex_color
 
+# Copie des pixels dans le fichier color.txt au format d'une matrice OCaml
 with open("colors.txt", "w") as f:
     f.write("[|")
     for list in pixels :

@@ -42,3 +42,27 @@ let () =
   let () = Thread.join task_thread in
   let () = Thread.join loading_thread in
   close_graph ()
+
+
+
+(* dessiner l'animation de chargement 
+let loading_animation () =
+  let delay = ref 0.1 in
+  let chars = [|"|"; "/"; "-"; "\\"|] in
+  let i = ref 0 in
+  while (!stop_threads = false) do
+    draw_string chars.(!i);
+    synchronize ();
+    Unix.sleepf !delay ;
+    i := (!i + 1) mod (Array.length chars);
+    clear_graph ();
+  done;;*)
+
+  (* let () = 
+  let loading_thread = Thread.create loading_animation () in
+  let result_channel = Event.new_channel () in
+  let task_thread = Thread.create (fun () ->
+    let result = backtracking arg in
+    Event.sync (Event.send result_channel result)) () in
+    let () = Thread.join loading_thread in
+    let result = Event.sync (Event.receive result_channel) in *)

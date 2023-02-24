@@ -1,9 +1,9 @@
-# C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\dune.exe exec bin/main.exe 36
+# dune build
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: "C:\\OCaml64\\home\\Lesco\\probleme_n_dames"
 # Auto-detected concurrency: 4
-$ C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -config > C:\OCaml64\tmp\dune_9fd96b_output
+$ C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -config > C:\OCaml64\tmp\dune_0da5b0_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -45,15 +45,13 @@ $ C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -config > C:\OC
 #        ; "INSIDE_DUNE" :
 #            "C:\\OCaml64\\home\\Lesco\\probleme_n_dames\\_build/default"
 #        ; "MANPATH" :
-#            "C:\\OCaml64\\home\\Lesco\\probleme_n_dames\\_build/install/default/bin"
-#        ; "OCAML_COLOR" : "always"
+#            "c:\\OCaml64\\home\\Lesco\\probleme_n_dames\\_build/install/default/bin"
 #        ; "OCAMLFIND_IGNORE_DUPS_IN" :
-#            "C:\\OCaml64\\home\\Lesco\\probleme_n_dames\\_build/install/default/lib"
+#            "c:\\OCaml64\\home\\Lesco\\probleme_n_dames\\_build/install/default/lib"
 #        ; "OCAMLPATH" :
-#            "C:\\OCaml64\\home\\Lesco\\probleme_n_dames\\_build/install/default/lib"
+#            "c:\\OCaml64\\home\\Lesco\\probleme_n_dames\\_build/install/default/lib"
 #        ; "OCAMLTOP_INCLUDE_PATH" :
-#            "C:\\OCaml64\\home\\Lesco\\probleme_n_dames\\_build/install/default/lib/toplevel"
-#        ; "OPAMCOLOR" : "always"
+#            "c:\\OCaml64\\home\\Lesco\\probleme_n_dames\\_build/install/default/lib/toplevel"
 #        }
 #  ; findlib_paths =
 #      [ External
@@ -132,3 +130,14 @@ $ C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -config > C:\OC
 #      ; windows_unicode = true
 #      }
 #  }
+# Promoting "_build/default/probleme_n_dames.opam" to "probleme_n_dames.opam"
+$ (cd _build/default && C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamldep.opt.exe -modules -impl bin/main.ml) > _build/default/bin/.main.eobjs/main.ml.d
+$ (cd _build/default && C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamldep.opt.exe -modules -impl bin/dames.ml) > _build/default/bin/.main.eobjs/dames.ml.d
+$ (cd _build/default && C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamldep.opt.exe -modules -impl bin/queen.ml) > _build/default/bin/.main.eobjs/queen.ml.d
+$ (cd _build/default && C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml\threads -I C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\graphics -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/byte/dune__exe__Dames.cmo -c -impl bin/dames.ml)
+$ (cd _build/default && C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml\threads -I C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\graphics -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/byte/dune__exe__Queen.cmo -c -impl bin/queen.ml)
+$ (cd _build/default && C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlopt.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.michel.eobjs/byte -I test/.michel.eobjs/native -I C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml\threads -I C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\camlimages\core -I C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\camlimages\graphics -I C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\camlimages\png -I C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\graphics -intf-suffix .ml -no-alias-deps -opaque -o test/.michel.eobjs/native/dune__exe__Michel.cmx -c -impl test/michel.ml)
+$ (cd _build/default && C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlopt.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml\threads -I C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\graphics -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Queen.cmx -c -impl bin/queen.ml)
+$ (cd _build/default && C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlopt.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml\threads -I C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\graphics -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlopt.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml\threads -I C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\graphics -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Dames.cmx -c -impl bin/dames.ml)
+$ (cd _build/default && C:\OCaml64\home\Lesco\.opam\4.14.0+mingw64c\bin\ocamlopt.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\graphics\graphics.cmxa -I C:\\OCaml64\\home\\Lesco\\.opam\\4.14.0+mingw64c\lib\graphics C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml\unix.cmxa -I C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml\threads\threads.cmxa -I C:/OCaml64/home/Lesco/.opam/4.14.0+mingw64c/lib/ocaml bin/.main.eobjs/native/dune__exe.cmx bin/.main.eobjs/native/dune__exe__Affichage.cmx bin/.main.eobjs/native/dune__exe__Dames.cmx bin/.main.eobjs/native/dune__exe__Queen.cmx bin/.main.eobjs/native/dune__exe__Main.cmx)

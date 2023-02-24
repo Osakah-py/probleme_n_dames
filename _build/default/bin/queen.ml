@@ -1,5 +1,8 @@
 open Graphics;;
 let t = transp;;
+
+(* Ce fichier contient 2 matrices répresentant la reine en 40x40 pixels et en 20x20 pixels *)
+(* Ces matrices ont été obtenu à partir de l'image et du programme python dans le dossier test *)
 let my_queen =
   [|[|t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;0x000000;0x000000;0x000000;0x000000;0x000000;0x000000;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;|]; 
 [|t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;0x000000;0x000000;0x000000;0x000000;0x000000;0x000000;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;|]; 

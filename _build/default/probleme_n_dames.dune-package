@@ -1,4 +1,4 @@
 (lang dune 3.4)
 (name probleme_n_dames)
-(sections (lib .) (bin ../../bin))
-(files (lib (META dune-package opam)) (bin (probleme_n_dames.exe)))
+(sections (lib .))
+(files (lib (META dune-package opam)))

@@ -3,7 +3,7 @@ Ce projet est conçu avec dune, ce qui implique que pour compiler le projet dune
 ```bash
 $ opam install dune
 ```
-Vous allez avoir également besoin de graphics
+Vous allez avoir également besoin de graphics et threads 
 ```bash
-$ opam install graphics
+$ opam install graphics threads
 ```

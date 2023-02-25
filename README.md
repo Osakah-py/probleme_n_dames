@@ -31,6 +31,7 @@ Pour l'aperçu général des fichier :
 
 # Compléxité 
 ## Temporelle
-Du au fait que nous utilisons un algo de bactracking, théoriquement on ferait toutes les possibilités soit n^(n). Hors en réalité on teste bien moins de possibilités car on en élimine beaucoup : déjà toutes les combinaisons ou des dames sont sur la même ligne sont éliminées. Ensuite du au fait de la symétrie des solution la première dame ne parcourera pas + de la moitié de ses cases possibles. Soit n/2 possibilités pour la première dame.
+Du au fait que nous utilisons un algo de bactracking, théoriquement on ferait toutes les possibilités soit O($n^n$). Hors en réalité on teste bien moins de possibilités car on en élimine beaucoup : déjà toutes les combinaisons ou des dames sont sur la même ligne sont éliminées. Ensuite du au fait de la symétrie des solution la première dame ne parcourera pas + de la moitié de ses cases possibles. Soit n/2 possibilités pour la première dame. (On remarque aussi que pour n>7 la premiere reine est toujours placée sur la case (0,0)). Par le jeu des symétrie on peut comme ça éliminer des solutions ligne par ligne. 
+Nous allons donc dire que la compléxité est O($n^n$) même si en réalité elle est bien inférieure.
 ## Spatiale 
 Etant donné qu'on utilise pas de matrice pour representer l'échiquier, et qu'on stock la les coordonnées des dames solutions dans une liste, la compléxité spatiale est O(n)

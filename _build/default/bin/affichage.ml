@@ -1,5 +1,6 @@
 open Graphics;;
 
+let loading = ref true;;
 let cell_x = ref 50 
 and cell_y = ref 50
 (* Couleur du damier *)
@@ -29,4 +30,18 @@ let damier arg =
       if (i+j) mod 2 = 0 then set_color beautiful_blue else set_color white;
       fill_rect ( i*(!cell_x) ) (j* (!cell_y) + 15) !cell_x !cell_y;
     done;
+  done;;
+
+(* dessiner l'animation de chargement *)
+let loading_animation () =
+  let delay = ref 0.1 in
+  let load_str = [|"Chargement |"; "Chargement /"; "Chargement -"; "Chargement \\"|] in
+  let i = ref 0 in
+  while (!loading) do
+    text_center load_str.(!i) (size_x()) (size_y ());
+    synchronize ();
+    Thread.yield ();
+    Unix.sleepf !delay ;
+    i := (!i + 1) mod (Array.length load_str);
+    clear_graph ();
   done;;

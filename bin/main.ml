@@ -38,13 +38,14 @@ let draw_queen x y =
   
 (* Fonction permettant d'afficher les dames sur l'échéquier *)
 let afficher_resultat liste = 
-  let rec aux liste y = match liste with 
+  let rec aux liste = match liste with 
   |[] -> print_newline (); (* On renvoit le type unit *)
-  |(x,_)::q -> ignore (draw_queen (x*(!cell_x) + 3) (y + 15)); aux q (y + (!cell_y));
-in aux liste 3;;
+  |(x,j)::q -> ignore (draw_queen (x*(!cell_x) + 3) (j*(!cell_y) + 15)); aux q;
+in aux liste;;
 
-(* On affiche un texte de chargement pendant le calcul de la solution (cf affichage.ml) *)
-text_center "Chargement... " (size_x()) (size_y());
+(* On affiche un texte de chargement pendant le calcul de la solution (cf affichage.ml) 
+text_center "Chargement... " (size_x()) (size_y());*)
+let loading_thread = Thread.create loading_animation () in
 
 (* Calcul du temps d'exécution de la fonction backtracking *)
 let start_time = Unix.gettimeofday () in
@@ -55,6 +56,8 @@ let end_time = Unix.gettimeofday () in
 cell_x := (size_x()/arg); cell_y := ((size_y() - 15)/arg);
 
 (* Effacement de la fenêtre et affichage du temps d'exécution *)
+loading := false;
+Thread.join loading_thread;
 clear_graph ();
 moveto 0 0;
 draw_string (Printf.sprintf "Solution trouvee en %f sec" (end_time -. start_time) );
@@ -66,3 +69,15 @@ afficher_resultat result;
 (* On attend que l'utilisateur presse une touche pour fermer la fenêtre *)
 ignore (wait_next_event [Key_pressed]);
 close_graph ();;  (* fermer la fenêtre graphique *)
+
+
+
+
+  (* let () = 
+  let loading_thread = Thread.create loading_animation () in
+  let result_channel = Event.new_channel () in
+  let task_thread = Thread.create (fun () ->
+    let result = backtracking arg in
+    Event.sync (Event.send result_channel result)) () in
+    let () = Thread.join loading_thread in
+    let result = Event.sync (Event.receive result_channel) in *)
